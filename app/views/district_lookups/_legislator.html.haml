@@ -1,0 +1,10 @@
+.legislator
+  .bio
+    .name
+      = leg.firstname
+      = leg.lastname
+    .phone
+      = leg.phone
+  .call
+    %button{:class =>"call",  :onclick=>"call('#{leg.phone}');"}
+  .clear

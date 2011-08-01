@@ -1,0 +1,75 @@
+
+- if @legislators.collect{|key, value| value}.compact.any?
+  .main-content
+    = render :partial => 'call_to_action'
+
+
+  .details-column
+    .top-box
+      .instructions
+        We'll use the microphone in your computer to connect you
+        with your member of congress. Make sure your volume is turned
+        up and then press Call.
+      .status{:style => "display:none;"}
+        .log{:id => 'log'}
+          Loading Pigeons...
+        %button{:class=>"hangup", :onclick=>"hangup();"}
+
+    .legislators
+      - @legislators.each do |key, value|
+        = render :partial => 'legislator', :locals => {:leg => value, :kind => key} if value
+      = link_to "Lookup Another Address", new_district_lookup_path, {:class => 'minimalist'}
+      %br
+      = link_to "Running into problems?", "mailto:bugs@rebuildthedream.com", {:class => 'minimalist'}
+    :javascript
+      $(document).ready(function() {
+        try {
+          Twilio.Device.setup("#{@capability.generate}");
+        } catch (err) {
+          alert("You need Flash installed and enabled to use this site.");
+        }
+      });
+
+      Twilio.Device.ready(function (device) {
+        $("#log").text("Ready");
+      });
+
+      Twilio.Device.error(function (error) {
+        $("#log").text("Error: " + error.message);
+      });
+
+      Twilio.Device.connect(function (conn) {
+        $("#log").text("Successfully established call");
+      });
+
+      Twilio.Device.disconnect(function (conn) {
+        $("#log").text("Call ended");
+      });
+
+      var connection;
+      function call(number) {
+        params =  { "number" : number };
+        $('.instructions').hide();
+        $('.status').show();
+        connection = Twilio.Device.connect(params);
+      }
+
+      function hangup() {
+        Twilio.Device.disconnectAll();
+        connection = null;
+        $('.instructions').show();
+        $('.status').hide();
+      }
+
+      $(document).keypress(function(key) {
+        if(key.which >= 48 && key.which <=57 && connection) {
+          connection.sendDigits(String.fromCharCode(key.charCode));
+        }
+
+      });
+
+
+- else
+  This campaign is not available here.
+
+  = link_to "Try Another Address", new_district_lookup_path

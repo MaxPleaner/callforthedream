@@ -1,0 +1,83 @@
+/* line 1, ../../../app/stylesheets/app/form.scss */
+form .input-box input {
+  -webkit-appearance: none;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  background-origin: padding-box;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-style: none;
+  border-top-width: 0px;
+  color: #888;
+  cursor: auto;
+  display: block;
+  float: left;
+  font-family: 'Lucida Grande';
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  height: 21px;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 7px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 7px;
+  vertical-align: baseline;
+  width: 220px;
+  word-spacing: 0px;
+  font-size: 1.1em;
+  height: 21px;
+  padding: 7px 0;
+  border: none;
+  background: url(/images/forms/mid.png) repeat-x top left;
+  float: left;
+}
+
+/* line 48, ../../../app/stylesheets/app/form.scss */
+input:focus, textarea:focus {
+  outline: none;
+}
+
+/* line 50, ../../../app/stylesheets/app/form.scss */
+form .input-box .input-left {
+  width: 20px;
+  height: 35px;
+  background: url(/images/forms/sprite.png) no-repeat 0 -201px;
+  float: left;
+}
+
+/* line 58, ../../../app/stylesheets/app/form.scss */
+form .input-box .input-right {
+  width: 20px;
+  height: 35px;
+  background: url(/images/forms/sprite.png) no-repeat -40px -201px;
+  float: left;
+}
+
+/* line 65, ../../../app/stylesheets/app/form.scss */
+#district_lookup_postal_code {
+  width: 100px;
+}
+
+/* line 69, ../../../app/stylesheets/app/form.scss */
+#district_lookup_submit {
+  margin: 8px 10px 10px 20px;
+}
+
+/* line 73, ../../../app/stylesheets/app/form.scss */
+.input-box {
+  margin: 14px;
+}

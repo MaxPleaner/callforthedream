@@ -1,0 +1,43 @@
+ <form method="POST" action="http://www.moveon.org/petition/process_petition.html" class="email-signup">
+
+  <input type="hidden" value="1059" name="petition_id">
+  <input type="hidden" value="1" name="posted">
+  <input type="hidden" value="1" name="dont_send_confirm">
+  <input type="hidden" name="track_referrer">
+  <input type="hidden" value="https://civ.moveon.org/donatec4/rebuild_donate.html?rc=callforthedream" name="redirect_url">
+  <input type="hidden" value=" " name="name">
+
+  <div class="email-field input-box">
+    <div class="input-left"></div>
+    <input type="text" onfocus="inputFocus(this,'Email Address')" onblur="inputBlur(this,'Email Address')" class="inline-label" value="Email Address" name="email">
+    <div class="input-right input-end"></div>
+  </div>
+
+  <div class="zip-field input-box input-inline">
+    <div class="input-left"></div>
+    <input type="text" onfocus="inputFocus(this,'Zip Code')" onblur="inputBlur(this,'Zip Code')" class="inline-label" value="Zip Code" name="zip">
+    <div class="input-right"></div>
+  </div>
+
+  <input type="submit" value="Join" class="submit-field">
+
+  <div style="clear: both;"></div>
+
+</form>
+
+
+<script>
+function inputBlur(field,text) {
+  if (field.value=='') {
+    field.value=text;
+    field.style.color="#888888";
+  }
+}
+
+function inputFocus(field,text) {
+  if (field.value==text) {
+    field.value='';
+  }
+  field.style.color="#000000";
+}
+</script>

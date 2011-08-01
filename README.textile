@@ -1,0 +1,14 @@
+h1. Call Congress Sample Application
+
+A sample application demonstrating how to use the Twilio Client to call congress. You can see something like it in action at "Call For The Dream":http://www.callforthedream.com/
+
+
+h2. Description
+
+This is a very simple app that uses the "Sunlight Labs API":https://github.com/sunlightlabs/ruby-sunlightapi/ and "Twilio":http://www.twilio.com/ to let people easily call congress right from their web browser. 
+
+All API keys have been switched to "CHANGE ME". You'll need to register for a Sunlight API key, and a Twilio account to use this code elsewhere. 
+
+h2. License
+
+See LICENSE.textile for more information.

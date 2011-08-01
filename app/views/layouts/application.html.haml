@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title
+      = 'Call For The Dream'
+
+    = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'print.css', :media => 'print'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+
+    %link{:rel=>"shortcut icon", :href=>"/images/favicon.ico", :type=>"image/x-icon"}
+
+    %script{:type => "text/javascript", :src => "https://static.twilio.com/libs/twiliojs/1.0/twilio.min.js"}
+
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+    = javascript_include_tag 'underscore-min', 'jquery-formhints'
+
+    %meta{:property => "og:title",       :content => "Call For The American Dream"}
+    %meta{:property => "og:image",       :content => image_path('rebuild.png')}
+    %meta{:property => "og:description", :content =>"Make a call right now, via your computer, to your Congresspeople to tell them \"I don't want America to default and I oppose any cuts Social Security, Medicare, or Medicaid.\""}
+    %meta{:property => "og:group",       :content => "cause" }
+
+    :plain
+      <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24813972-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+      </script>
+
+  %body{:class => 'bp'}
+    .container
+      .header-container
+        .header
+          = link_to image_tag('logo.png'), '/'
+          .share
+            :coffeescript
+              $(document).ready ->
+                jQuery('#fb-share').bind 'click', (event) =>
+                  window.open('http://www.facebook.com/sharer.php?u=#{CGI.escape('http://callforthedream.com/')}','sharer','toolbar=0,status=0,width=626,height=436');
+
+                jQuery('#twitter-share').bind 'click', (event) =>
+                  window.open('http://twitter.com/share?url=#{CGI.escape('http://callforthedream.com/')}&text=#{CGI.escape('Call Congress for free from your computer: "No Default, No Cuts to Social Sec., Medicare, Medicaid" via @rebuilddream')}','sharer','toolbar=0,status=0,width=626,height=436');
+
+
+            .fb-share{ :id => 'fb-share'}
+            .twitter-share{:id => 'twitter-share'}
+          -#.signup
+          -#  = render :partial => 'layouts/signup'
+        .clear
+
+        .header-strip
+      .content
+        .content-wrapper
+          .messages
+            - flash.each do |key, msg|
+              %div{'class' => key}
+                = msg
+          = yield
+      .footer
+        .footer-wrapper
+          .powered
+            Powered By
+          .logos
+            = link_to image_tag('rebuild.gif'), 'http://www.rebuildthedream.com/'
+            = link_to image_tag('rewire.png'), 'http://www.rewirelabs.com/'
+            = link_to image_tag('twilio.png'), 'http://www.twilio.com/'
+
+          .privacy{:style => 'text-align:center; margin:0px auto 10px'}
+            = link_to 'Privacy policy', 'http://www.rebuildthedream.com/privacy.php', :class => 'minimalist'

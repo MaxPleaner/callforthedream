@@ -1,0 +1,4 @@
+Sunlight::Base.api_key = 'CHANGE ME'
+
+ACCOUNT_SID = 'CHANGE ME'
+AUTH_TOKEN = 'CHANGE ME'

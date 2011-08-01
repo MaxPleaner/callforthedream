@@ -1,0 +1,33 @@
+
+
+.main-content
+  = render :partial => 'call_to_action'
+
+
+.details-column
+
+  :coffeescript
+    $(document).ready ->
+      jQuery('#new_district_lookup').formHints();
+
+
+  %h3
+    Call Your Representatives
+
+  = @district_lookup.errors.on(:base)
+
+  = form_for @district_lookup do |form|
+    .input-box
+      .input-left
+      = form.text_field :street, :required => false, :title => 'Home Street Address'
+      .input-right
+    .clear
+
+
+    .input-box
+      .input-left
+      = form.text_field :postal_code, :required => false, :title => 'Zip Code'
+      .input-right
+    .left
+      = form.submit 'Lookup'
+

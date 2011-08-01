@@ -1,0 +1,115 @@
+/* line 7, ../../app/stylesheets/ie.scss */
+body.bp {
+  text-align: center;
+}
+/* line 48, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+* html body.bp legend {
+  margin: 0px -8px 16px 0;
+  padding: 0;
+}
+/* line 52, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+html > body.bp p code {
+  *white-space: normal;
+}
+/* line 67, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp .container {
+  text-align: left;
+}
+/* line 69, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp sup {
+  vertical-align: text-top;
+}
+/* line 71, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp sub {
+  vertical-align: text-bottom;
+}
+/* line 73, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp hr {
+  margin: -8px auto 11px;
+}
+/* line 75, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp img {
+  -ms-interpolation-mode: bicubic;
+}
+/* line 77, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp fieldset {
+  padding-top: 0;
+}
+/* line 79, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp textarea {
+  overflow: auto;
+}
+/* line 82, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp input.text {
+  margin: 0.5em 0;
+  background-color: white;
+  border: 1px solid #bbbbbb;
+}
+/* line 86, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp input.text:focus {
+  border: 1px solid #666666;
+}
+/* line 88, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp input.title {
+  margin: 0.5em 0;
+  background-color: white;
+  border: 1px solid #bbbbbb;
+}
+/* line 92, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp input.title:focus {
+  border: 1px solid #666666;
+}
+/* line 94, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp input.checkbox {
+  position: relative;
+  top: 0.25em;
+}
+/* line 97, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp input.radio {
+  position: relative;
+  top: 0.25em;
+}
+/* line 100, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp input.button {
+  position: relative;
+  top: 0.25em;
+}
+/* line 103, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp textarea {
+  margin: 0.5em 0;
+}
+/* line 105, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp select {
+  margin: 0.5em 0;
+}
+/* line 107, ../../../../Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body.bp button {
+  position: relative;
+  top: 0.25em;
+}
+
+/* additional stylesheets only for IE7, if you wish to support it */
+/* legend labels apper to have a left margin or padding I couldn't get rid of cleanly in main stylesheet */
+/* line 22, ../../app/stylesheets/ie.scss */
+.formtastic .input fieldset legend.label {
+  margin-left: -7px;
+}
+
+/* checkbox and radio inputs appear to have a margin around them that I couldn't remove in main stylesheet */
+/* line 28, ../../app/stylesheets/ie.scss */
+.formtastic .choice label input,
+.formtastic .boolean label input {
+  position: relative;
+  left: -4px;
+  right: -4px;
+  size: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 39, ../../app/stylesheets/ie.scss */
+.formtastic .buttons,
+.formtastic .inputs,
+.formtastic .input {
+  zoom: 1;
+}

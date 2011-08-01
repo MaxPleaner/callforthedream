@@ -1,0 +1,106 @@
+/*
+Syntax error: Undefined mixin 'container'.
+        on line 37 of /Work/congressconnect/app/stylesheets/app/content.scss, in `container'
+        from line 37 of /Work/congressconnect/app/stylesheets/app/content.scss
+
+32: .container {
+33:   width: 100%;
+34: 
+35:   .content {
+36:     min-height:600px;
+37:     @include container;
+38:   }
+39: 
+40:   .header-container {
+41:     width: 100%;
+42:     background: #FFF;
+
+Backtrace:
+/Work/congressconnect/app/stylesheets/app/content.scss:37:in `container'
+/Work/congressconnect/app/stylesheets/app/content.scss:37
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:169:in `visit_mixin'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/tree/root_node.rb:20:in `render'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/engine.rb:291:in `_render'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/engine.rb:239:in `block in render'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/util.rb:297:in `silence_sass_warnings'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/engine.rb:239:in `render'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:175:in `each'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:173:in `each'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/sass-3.1.5/lib/sass/plugin/rack.rb:51:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/Users/woodhull/.rvm/gems/ruby-1.9.2-p136@congressconnect/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/Users/woodhull/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/woodhull/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/woodhull/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'container'.\A         on line 37 of /Work/congressconnect/app/stylesheets/app/content.scss, in `container'\A         from line 37 of /Work/congressconnect/app/stylesheets/app/content.scss\A \A 32: .container {\A 33:   width: 100%;\A 34: \A 35:   .content {\A 36:     min-height:600px;\A 37:     @include container;\A 38:   }\A 39: \A 40:   .header-container {\A 41:     width: 100%;\A 42:     background: #FFF;"; }
