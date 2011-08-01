@@ -1,1 +1,0 @@
-load 'lib/first_logic.rb'
