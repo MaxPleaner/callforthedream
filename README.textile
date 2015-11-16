@@ -1,6 +1,6 @@
 h1. Call Congress Sample Application
 
-A sample application demonstrating how to use the Twilio Client to call congress. You can see something like it in action at "Call For The Dream":http://www.callforthedream.com/
+A sample application demonstrating how to use the Twilio Client to call congress.
 
 
 h2. Description
